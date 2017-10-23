@@ -20,7 +20,8 @@
 @bg-koire: #817eff;
 @bg-lara: #f74770;
 @bg-services-list: #fbfbfb;
-
+@yellow: #ffef3b;
+@grey: #e0e0e0;
 
 //base settings
 body{
@@ -432,4 +433,112 @@ i.fa-camera-retro{
 		color: @base-red;
 		.opn-bold;
 	}
+}
+
+
+ // Feedback section
+
+.feedback{
+	&-box{
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 10px;
+		p{
+			font-size: 17px;
+			margin-top: 20px;
+			margin-bottom: 25px;
+			padding-left: 30px;
+			padding-right: 30px;
+
+			span{
+				.opn-bold;
+			}
+		}
+
+		i.fa-star{
+			color: @yellow;
+		}
+       }
+
+    &-img{
+    	margin-bottom: -64px;
+    }   
+
+    &-shadow{
+    	padding: 10px;
+    	padding-top: 64px;
+    	box-shadow: 0px 0px 27px 0px rgba(20, 20, 21, 0.09);
+
+}
+
+    &-slider-arrows{
+    	position: absolute;
+    	top: 50%;
+    	font-size: 26px;
+    	z-index: 999;
+    	height: 50px;
+    	width: 50px;
+    	-webkit-transform: translateY(-9px);
+    	-ms-transform: translateY(-9px);
+    	-o-transform: translateY(-9px);
+    	transform: translateY(-9px);
+		box-shadow: 0px 3px 14px 0px rgba(20, 20, 21, 0.28);
+		background-color: @white;
+		padding: 16px;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+		border-radius: 50%;
+    	
+    	&:hover{
+    		background-color: @base-red;
+    		color: @white;
+    		cursor: pointer;
+    	}
+    }
+}
+
+
+.slick-active{
+	outline: none;
+}
+
+
+.slick-slide{
+	outline: none;
+}
+
+
+.arrow-right{
+	right: 0;
+	padding-left: 20ps;
+}
+
+.arrow-left{
+	left: 0;
+}
+
+
+.slick-dots li button:before {
+	width: 21px;
+	height: 7px;
+	color: transparent;
+	background-color: @grey;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+.slick-dots li.slick-active button:before{
+	color: transparent;
+	background-color: @base-red;
+}
+
+
+.slick-dots{
+	bottom: -50px;
 }
