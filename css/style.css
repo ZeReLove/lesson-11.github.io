@@ -602,3 +602,6 @@ Modal Window
   -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
   transition: opacity 0.3s 0s, visibility 0s 0s;
 }
+.section-header {
+  animation-duration: ;
+}
