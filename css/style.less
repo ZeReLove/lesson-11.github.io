@@ -331,6 +331,9 @@ i.fa-camera-retro{
 .works-box{
 	height: 360px;
 	position: relative;
+	img{
+		width: 100%;
+	}
 }
 
 .signature{
@@ -738,8 +741,64 @@ Modal Window
 
 
 
+@media (max-width: 480px){
+	.main{
+		&-text{
+			h1{
+				font-size: 28px;
+			}
+		}
+	}
 
+	.section-header{
+		h2{
+			font-size: 22px;
+		}
+	}
 
-.section-header{
-	animation-duration: ;
+	.process-box{
+		margin-top: 75px;
+	}
+	
 }
+
+@media (min-width: 481px) and (max-width: 767px){
+	.process-box{
+		margin-top: 75px;
+	}
+	
+}
+
+@media (min-width: 768px) and  (max-width: 991px){
+	.section-header{
+		h2{
+			font-size: 22px;
+		}
+	}
+
+		.process-box{
+		margin-top: 75px;
+	}
+
+	.works-box{
+		height: 220px;
+	}
+}
+
+
+@media (min-width: 992px) and  (max-width: 1199px){
+	.works-box{
+		height: 294px;
+	}
+}
+
+@media (min-width: 1200px) and  (max-width: 1600px){
+	
+}
+
+@media (min-width: 1601px){
+
+}
+
+
+

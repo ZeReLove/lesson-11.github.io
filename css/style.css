@@ -264,6 +264,9 @@ i.fa-camera-retro {
   height: 360px;
   position: relative;
 }
+.works-box img {
+  width: 100%;
+}
 .signature {
   opacity: 0;
   position: absolute;
@@ -602,6 +605,35 @@ Modal Window
   -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
   transition: opacity 0.3s 0s, visibility 0s 0s;
 }
-.section-header {
-  animation-duration: ;
+@media (max-width: 480px) {
+  .main-text h1 {
+    font-size: 28px;
+  }
+  .section-header h2 {
+    font-size: 22px;
+  }
+  .process-box {
+    margin-top: 75px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .process-box {
+    margin-top: 75px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-header h2 {
+    font-size: 22px;
+  }
+  .process-box {
+    margin-top: 75px;
+  }
+  .works-box {
+    height: 220px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .works-box {
+    height: 294px;
+  }
 }
