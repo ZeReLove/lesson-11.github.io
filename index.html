@@ -54,10 +54,11 @@
         	<div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2">
         		<div class="main-form">
         		<p class="main-form-header"><span>Send</span> A Message</p>
-        			<form action="#">
-        				<input type="text" placeholder="Your name">
-        				<input type="email" placeholder="Your email">
-        				<textarea placeholder="Your Message" rows="3"></textarea>
+        			<form action="smart.php" method="POST">
+        				<input type="hidden" name="whatever" value="Главная форма">
+        				<input type="text" name="username" placeholder="Your name">
+        				<input type="email" name="email" placeholder="Your email">
+        				<textarea placeholder="Your Message" name="user_message" rows="3"></textarea>
         				<button class="main-form-btn" type="submit">Send Message &rarr;</button>
         			</form>
         		</div>
